@@ -43,3 +43,8 @@ class PTb2(TinhToan):
                     self.result.set("Phương trình vô nghiệm (không có nghiệm thực)")
         except ValueError:
             messagebox.showerror("Error", "Tham số không hợp lệ")
+    def clear(self):
+        self.a.set("")
+        self.b.set("")
+        self.c.set("")
+        self.result.set("")
